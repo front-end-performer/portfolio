@@ -1,6 +1,6 @@
 <template>
   <UContainer
-    class="fixed left-0 right-0 mt-4 md:mt-5 sm:left-6 sm:right-6 sm:px-0 md:px-0 lg:px-6 max-w-screen-xl z-20"
+    class="fixed left-0 right-0 mt-4 md:mt-5 sm:left-6 sm:right-6 sm:px-0 md:px-0 lg:px-0 xl:px-6 max-w-screen-xl z-20"
   >
     <UCard
       class="w-full"
@@ -16,11 +16,11 @@
             <UAvatar
               :src="link.avatar.src"
               :size="breakpoints.w <= 667 ? 'sm' : 'lg'"
-              :alt="link.descr"
+              alt="logo"
             />
 
             <div class="flex flex-col items-start">
-              <h3 class="text-xs sm:text-2xl font-semibold text-slate-700">
+              <h3 class="text-sm sm:text-2xl font-semibold text-slate-700">
                 {{ link.label }}
               </h3>
               <p class="text-xs sm:text-base text-slate-500">

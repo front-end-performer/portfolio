@@ -32,7 +32,7 @@ const setBreakpoint = () => {
 };
 
 export const useBreakpoints = (): {
-  breakpoints: Object
+  breakpoints: any
 } => {
   onMounted(() => {
     setBreakpoint();

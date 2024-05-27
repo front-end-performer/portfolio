@@ -54,14 +54,18 @@
             <h3 class="text-lg font-semibold">{{ $t("globals.skills") }}</h3>
 
             <div class="flex gap-3 flex-wrap mt-4">
-                <UBadge
-                    v-for="skill in skills"
-                    :key="skill.name"
-                    color="white"
-                    variant="solid"
-                    class="hover:bg-slate-100"
-                    >{{ skill.name }} - {{ skill.years }} {{ $t(skill.expirience) }}</UBadge
-                  >
+              <UBadge
+                v-for="skill in skills"
+                :key="skill.name"
+                color="white"
+                variant="solid"
+                class="hover:bg-blue-50"
+                :class="
+                  skill.active ? 'bg-blue-50 bg-gradient-to-r from-white' : ''
+                "
+                >{{ skill.name }} - {{ skill.years }}
+                {{ $t(skill.expirience) }}</UBadge
+              >
             </div>
           </div>
 
@@ -72,16 +76,16 @@
 
             <ul class="mt-4">
               <li class="flex items-center mb-5 gap-2">
+                {{ $t("languages.ukrainian.name") }} -
+                {{ $t("languages.ukrainian.level") }}
+              </li>
+              <li class="flex items-center mb-5 gap-2">
                 {{ $t("languages.english.name") }} -
                 {{ $t("languages.english.level") }}
               </li>
               <li class="flex items-center mb-5 gap-2">
                 {{ $t("languages.german.name") }} -
                 {{ $t("languages.german.level") }}
-              </li>
-              <li class="flex items-center mb-5 gap-2">
-                {{ $t("languages.ukrainian.name") }} -
-                {{ $t("languages.ukrainian.level") }}
               </li>
               <li class="flex items-center mb-5 gap-2">
                 {{ $t("languages.russian.name") }} -
@@ -97,11 +101,11 @@
           <div>
             <h3 class="text-lg font-semibold">{{ $t("work.name") }}</h3>
 
-            <div class="w-full flex flex-col gap-y-6">
+            <div class="w-full flex flex-col">
               <UCard
                 v-for="company in workExpirience"
                 :key="company.name"
-                class="ring-0 shadow-none border-b rounded-none"
+                class="ring-0 shadow-none border-t rounded-none noBorderTop"
               >
                 <h3 class="text-md font-semibold">{{ company.name }}</h3>
                 <p class="text-xs text-gray-500 mb-2">
@@ -151,61 +155,77 @@ const skills = [
     icon: "mdi:language-html5",
     years: 6,
     expirience: "globals.years",
+    active: false,
   },
   {
     name: "CSS3",
     icon: "mdi:language-css3",
     years: 6,
     expirience: "globals.years",
+    active: true,
   },
   {
     name: "SASS",
     icon: "mdi:sass",
     years: 4,
     expirience: "globals.years",
+    active: false,
   },
   {
     name: "Tailwind",
     icon: "mdi:tailwind",
     years: 4,
     expirience: "globals.years",
+    active: false,
   },
   {
     name: "JavaScript",
     icon: "mdi:language-javascript",
     years: 6,
     expirience: "globals.years",
+    active: true,
   },
   {
     name: "TypeScript",
     icon: "mdi:language-typescript",
     years: 2,
     expirience: "globals.years",
+    active: true,
   },
   {
     name: "VUE",
     icon: "mdi:vuejs",
     years: 3,
     expirience: "globals.years",
+    active: true,
   },
   {
     name: "Nuxt",
     icon: "mdi:nuxt",
     years: 2,
     expirience: "globals.years",
+    active: false,
   },
-  { name: "React", icon: "mdi:react", years: 2, expirience: "globals.years" },
+  {
+    name: "React",
+    icon: "mdi:react",
+    years: 2,
+    expirience: "globals.years",
+    active: true,
+  },
   {
     name: "RESTfull API",
     icon: "mdi:api",
     years: 3,
     expirience: "globals.years",
+    active: false,
   },
   {
     name: "Git",
     icon: "mdi:git",
     years: 4,
     expirience: "globals.years",
+    active: false,
   },
 ];
 
@@ -309,3 +329,9 @@ const workExpirience = [
   },
 ];
 </script>
+
+<style scoped>
+.noBorderTop:first-of-type {
+  border: none;
+}
+</style>
