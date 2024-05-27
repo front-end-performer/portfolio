@@ -1,9 +1,9 @@
 export default {
   globals: {
     about: "Über mich",
-    description: '',
+    description: 'Ich arbeite seit etwa 5 Jahren als Frontend-Entwickler. Ich liefere mit Leidenschaft qualitativ hochwertige, saubere Code-Lösungen, die den Benutzeranforderungen und Geschäftszielen entsprechen. Ich lerne ständig dazu und bleibe über die neuesten Best Practices der Branche auf dem Laufenden. Meine Werte sind die Bereitstellung optisch ansprechender, benutzerfreundlicher Websites und Webanwendungen unter Verwendung gängiger Sprachen und Frameworks.',
     contacts: "Kontakte",
-    description: "FrontEnd Entwickler",
+    subhead: "FrontEnd Entwickler",
     education: "Ausbildung",
     languages: "Sprachen",
     skills: "Fähigkeiten",

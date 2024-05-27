@@ -8,9 +8,7 @@
           <div>
             <h3 class="text-lg font-semibold">{{ $t("globals.about") }}</h3>
 
-            <p class="mt-4">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            </p>
+            <p class="mt-4">{{ $t("globals.description") }}</p>
           </div>
 
           <UDivider class="my-4" />
@@ -42,8 +40,25 @@
               <li
                 class="flex items-center gap-2 mb-5 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
               >
-                <Icon name="ic:baseline-location-city" />
-                Düsseldorf, NRW
+                <Icon name="ic:baseline-location-city" /> Düsseldorf, NRW
+              </li>
+              <li
+                class="flex items-center gap-2 mb-5 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+              >
+                <ULink
+                  to="https://github.com/front-end-performer"
+                  active-class="text-primary"
+                  inactive-class="flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+                >
+                  <Icon name="mdi:github" /> Github
+                </ULink>
+                <ULink
+                  to="https://www.linkedin.com/in/oleksii-sodolinskyi-%F0%9F%87%BA%F0%9F%87%A6-a17b20160/"
+                  active-class="text-primary"
+                  inactive-class="flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+                >
+                  <Icon name="mdi:linkedin" /> LinkedInn
+                </ULink>
               </li>
             </ul>
           </div>
@@ -59,9 +74,9 @@
                 :key="skill.name"
                 color="white"
                 variant="solid"
-                class="hover:bg-blue-50"
+                class="hover:bg-blue-50 cursor-pointer"
                 :class="
-                  skill.active ? 'bg-blue-50 bg-gradient-to-r from-white' : ''
+                  skill.active ? 'bg-blue-50 bg-gradient-to-r from-white dark:from-slate-600' : ''
                 "
                 >{{ skill.name }} - {{ skill.years }}
                 {{ $t(skill.expirience) }}</UBadge
@@ -108,7 +123,7 @@
                 class="ring-0 shadow-none border-t rounded-none noBorderTop"
               >
                 <h3 class="text-md font-semibold">{{ company.name }}</h3>
-                <p class="text-xs text-gray-500 mb-2">
+                <p class="text-xs text-gray-500 mb-2 dark:text-gray-400">
                   {{ $t(company.description) }}
                 </p>
                 <p class="text-xs font-semibold">
@@ -146,8 +161,6 @@
 
 <script setup>
 const { t } = useI18n();
-
-console.log(t("work.cheers.responsibilities"));
 
 const skills = [
   {

@@ -13,18 +13,20 @@
       <ul class="flex justify-between items-center gap-1">
         <li v-for="link in links" :key="link.label">
           <div v-if="link.avatar" class="flex items-center gap-4">
-            <UAvatar
+            <UTooltip text="Open for network!" class="cursor-pointer">
+              <UAvatar
               :src="link.avatar.src"
               :size="breakpoints.w <= 667 ? 'sm' : 'lg'"
               alt="logo"
             />
 
+            </UTooltip>
             <div class="flex flex-col items-start">
-              <h3 class="text-sm sm:text-2xl font-semibold text-slate-700">
+              <h3 class="text-sm sm:text-2xl font-semibold text-slate-700 dark:text-slate-100">
                 {{ link.label }}
               </h3>
-              <p class="text-xs sm:text-base text-slate-500">
-                {{ $t("globals.description") }}
+              <p class="text-xs sm:text-base text-slate-500 dark:text-slate-300">
+                {{ $t("globals.subhead") }}
               </p>
             </div>
           </div>
