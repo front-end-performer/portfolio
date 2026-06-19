@@ -81,9 +81,9 @@ export const de: LocaleContent = {
       ],
     },
     careerProfile: [
-      "Senior Frontend-Softwareentwickler mit über 7 Jahren Erfahrung im Aufbau skalierbarer Webanwendungen, Frontend-Plattformen, wiederverwendbarer Komponentenbibliotheken und unternehmensweiter Designsysteme. Mein Fokus liegt auf produktorientierter Entwicklung: wartbare, gut dokumentierte UI, auf der Teams verlässlich aufbauen können.",
-      "Meine Kernkompetenz sind Designsysteme und Komponentenarchitektur. Ich habe Komponentenbibliotheken entworfen und entwickelt, die in mehreren Produkten und Teams eingesetzt werden, Storybook-Dokumentation mit interaktiven Beispielen und Entwickler-Richtlinien gepflegt sowie Design-Token-Pipelines für ein konsistentes UI etabliert. Barrierefreiheit und Performance sind in allem, was ich baue, zentrale Anforderungen – von ARIA und Tastaturnavigation bis hin zur Screenreader-Unterstützung.",
-      "Ich arbeite eng mit UX-, Produkt- und Entwicklungsteams zusammen, um UI/UX-Muster zu standardisieren, und bringe ein Full-Stack-Verständnis mit, das React, Vue, TypeScript, APIs und Node.js umfasst. Ich habe Framework-Migrationen unterstützt, komponentenbasiertes Testing eingeführt und Enterprise-APIs integriert – stets mit dem Ziel von Klarheit, Konsistenz und langfristiger Wartbarkeit.",
+      "Ich bin ein proaktiver Senior Frontend-Softwareentwickler mit über 7 Jahren Erfahrung in der Entwicklung skalierbarer Webanwendungen, Frontend-Plattformen, wiederverwendbarer Komponentenbibliotheken und unternehmensweiter Designsysteme. Mein Schwerpunkt liegt auf wartbaren, barrierefreien und leistungsstarken Benutzeroberflächen auf Basis solider Architektur, praktischer Engineering-Prinzipien und enger Zusammenarbeit mit UX-, Produkt- und Entwicklungsteams.",
+      "Ich arbeite am besten in kleinen, kollaborativen Teams und schätze offene, freundliche und direkte Kommunikation, um Missverständnisse zu vermeiden und alle aufeinander abzustimmen. Ich habe gelernt, wie wichtig Ehrlichkeit, Klarheit und eine serviceorientierte Haltung sind. Ich glaube daran, Ziele gemeinsam zu erreichen, Wissen zu teilen und Erfolge als Team zu feiern.",
+      "Ich kann Mehrwert in Rollen wie Senior Frontend Developer, Frontend Architect und Design System Engineer schaffen.",
     ],
     achievements: [
       "40+ wiederverwendbare UI-Komponenten entwickelt, die in 5 Teams eingesetzt werden.",

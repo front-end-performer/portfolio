@@ -80,9 +80,9 @@ export const en: LocaleContent = {
       ],
     },
     careerProfile: [
-      "Senior Frontend Software Developer with 7+ years of experience building scalable web applications, frontend platforms, reusable component libraries, and enterprise design systems. I focus on product-minded engineering: shipping maintainable, well-documented UI that teams can build on with confidence.",
-      "My core strength is design systems and component architecture. I have designed and developed component libraries adopted across multiple products and teams, maintained Storybook documentation with interactive examples and developer guidelines, and established design token pipelines for consistent UI across applications. Accessibility and performance are first-class concerns in everything I build, from ARIA and keyboard navigation to screen reader support.",
-      "I work closely with UX, product, and engineering teams to standardize UI/UX patterns, and I bring a full-stack understanding that spans React, Vue, TypeScript, APIs, and Node.js. I have supported framework migrations, introduced component-level testing, and integrated enterprise APIs, always aiming for clarity, consistency, and long-term maintainability.",
+      "I am a proactive Senior Frontend Software Developer with 7+ years of experience delivering scalable web applications, frontend platforms, reusable component libraries, and enterprise design systems. My emphasis is on building maintainable, accessible, and high-performance user interfaces based on sound architecture, practical engineering principles, and strong collaboration with UX, product, and development teams.",
+      "I thrive in small, collaborative teams and value open, friendly, and direct communication to avoid misunderstandings and keep everyone aligned. I have learned the importance of honesty, clarity, and a service-oriented mindset. I believe in reaching goals collectively, sharing knowledge, and celebrating results as a team.",
+      "I can add value in roles such as Senior Frontend Developer, Frontend Architect, and Design System Engineer.",
     ],
     achievements: [
       "Built 40+ reusable UI components used across 5 teams.",
