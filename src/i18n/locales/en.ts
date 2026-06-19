@@ -38,7 +38,7 @@ export const en: LocaleContent = {
       location: "Düsseldorf, Germany",
       yearsOfExperience: "7+ years",
       headline:
-        "I build scalable web applications, design systems, and reusable component libraries with React, Vue, and TypeScript.",
+        "I build scalable, high-performance web applications, design systems, and reusable component libraries with React, Vue, and TypeScript.",
     },
     contacts: {
       email: {

@@ -39,7 +39,7 @@ export const de: LocaleContent = {
       location: "Düsseldorf, Deutschland",
       yearsOfExperience: "7+ Jahre",
       headline:
-        "Ich entwickle skalierbare Webanwendungen, Designsysteme und wiederverwendbare Komponentenbibliotheken mit React, Vue und TypeScript.",
+        "Ich entwickle skalierbare, leistungsstarke Webanwendungen, Design-Systeme und wiederverwendbare Komponentenbibliotheken mit React, Vue und TypeScript.",
     },
     contacts: {
       email: {
