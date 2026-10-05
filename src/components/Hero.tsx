@@ -1,6 +1,8 @@
 import type { Identity, Profile } from "../types";
 import { useTranslation } from "../i18n/LanguageProvider";
 import { ContactIconLinks } from "./ContactIconLinks";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { ThemeToggle } from "./ThemeToggle";
 
 interface HeroProps {
   identity: Identity;
@@ -13,7 +15,13 @@ export function Hero({ identity, contacts }: HeroProps) {
   return (
     <header className="hero">
       <div className="container">
-        <p className="hero__eyebrow">{identity.role}</p>
+        <div className="hero__top">
+          <p className="hero__eyebrow">{identity.role}</p>
+          <div className="hero__controls">
+            <LanguageSwitcher />
+            <ThemeToggle />
+          </div>
+        </div>
         <h1 className="hero__name">{identity.name}</h1>
         <p className="hero__headline">{identity.headline}</p>
 

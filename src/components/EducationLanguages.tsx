@@ -25,7 +25,8 @@ export function EducationLanguages({
               <li key={item.institution} className="education__item">
                 <p className="education__program">{item.program}</p>
                 <p className="education__institution">
-                  {item.institution}, {item.location} · {item.period}
+                  {item.institution}, {item.location} ·{" "}
+                  <span className="nowrap">{item.period}</span>
                 </p>
               </li>
             ))}
@@ -37,7 +38,8 @@ export function EducationLanguages({
               <li key={item.name} className="education__item">
                 <p className="education__program">{item.name}</p>
                 <p className="education__institution">
-                  {item.issuer} · {item.date}
+                  {item.issuer} ·{" "}
+                  <span className="nowrap">{item.date}</span>
                 </p>
                 <p className="education__description">{item.description}</p>
                 <a

@@ -75,8 +75,8 @@ export const en: LocaleContent = {
     hireMe: {
       location: "Düsseldorf, Germany",
       preferredRole:
-        "Senior Software Engineer — Full Stack (React / Vue / TypeScript) & Agentic AI",
-      workSetup: "Remote / Hybrid in Germany",
+        "Senior Software Developer — Frontend (React / Vue / TypeScript) & Agentic AI",
+      workSetup: "On-site / Remote / Hybrid in Germany",
       focusAreas: [
         "Design systems",
         "Scalable frontend platforms",
@@ -90,7 +90,7 @@ export const en: LocaleContent = {
     careerProfile: [
       "I am a proactive Senior Software Developer with 7+ years of experience delivering scalable web applications, frontend platforms, reusable component libraries, and enterprise design systems. My emphasis is on building maintainable, accessible, and high-performance user interfaces with React, Vue, and TypeScript, backed by hands-on backend work with Node.js, Express.js, PostgreSQL (Supabase), GraphQL, and REST APIs. I bring AI-assisted development and agentic AI into my daily engineering work.",
       "I thrive in small, collaborative teams and value open, friendly, and direct communication to avoid misunderstandings and keep everyone aligned. I have learned the importance of honesty, clarity, and a service-oriented mindset. I believe in reaching goals collectively, sharing knowledge, and celebrating results as a team.",
-      "I can add value in roles such as Senior Frontend Developer, Frontend Architect, and Design System Engineer.",
+      "I can add value in roles such as Senior Frontend Developer, Frontend Architect, and Design System Engineer, and in teams bringing agentic AI into their engineering work.",
     ],
     achievements: [
       "Built the design system and 40+ component library now used by 5 product teams at FIEGE, a European logistics group with 22,000+ employees in 14 countries.",

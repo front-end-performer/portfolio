@@ -75,8 +75,8 @@ export const uk: LocaleContent = {
     hireMe: {
       location: "Дюссельдорф, Німеччина",
       preferredRole:
-        "Senior Software Engineer — Full Stack (React / Vue / TypeScript) & Agentic AI",
-      workSetup: "Віддалено / Гібрид у Німеччині",
+        "Senior Software Developer — Frontend (React / Vue / TypeScript) & Agentic AI",
+      workSetup: "В офісі / Віддалено / Гібрид у Німеччині",
       focusAreas: [
         "Дизайн-системи",
         "Масштабовані frontend-платформи",
@@ -90,7 +90,7 @@ export const uk: LocaleContent = {
     careerProfile: [
       "Я проактивний Senior Software Developer з понад 7 роками досвіду у створенні масштабованих вебзастосунків, frontend-платформ, бібліотек перевикористовуваних компонентів та корпоративних дизайн-систем. Мій акцент — на підтримуваних, доступних і високопродуктивних інтерфейсах на React, Vue та TypeScript, підкріплених практичним backend-досвідом з Node.js, Express.js, PostgreSQL (Supabase), GraphQL та REST API. AI-асистована розробка та agentic AI — частина моєї щоденної інженерної роботи.",
       "Я найкраще працюю в невеликих командних колективах і ціную відкриту, дружню та прямолінійну комунікацію, щоб уникати непорозумінь і тримати всіх на одній хвилі. Я усвідомив важливість чесності, ясності та орієнтації на сервіс. Я вірю в досягнення цілей разом, обмін знаннями та святкування результатів командою.",
-      "Можу бути корисним на ролях Senior Frontend Developer, Frontend Architect і Design System Engineer.",
+      "Можу бути корисним на ролях Senior Frontend Developer, Frontend Architect і Design System Engineer, а також у командах, що впроваджують agentic AI в інженерну роботу.",
     ],
     achievements: [
       "Створив дизайн-систему та бібліотеку з 40+ компонентів, якою користуються 5 продуктових команд у FIEGE — європейській логістичній групі з понад 22 000 співробітників у 14 країнах.",

@@ -75,8 +75,8 @@ export const de: LocaleContent = {
     hireMe: {
       location: "Düsseldorf, Deutschland",
       preferredRole:
-        "Senior Software Engineer — Full Stack (React / Vue / TypeScript) & Agentic AI",
-      workSetup: "Remote / Hybrid in Deutschland",
+        "Senior Software Developer — Frontend (React / Vue / TypeScript) & Agentic AI",
+      workSetup: "Vor Ort / Remote / Hybrid in Deutschland",
       focusAreas: [
         "Designsysteme",
         "Skalierbare Frontend-Plattformen",
@@ -90,7 +90,7 @@ export const de: LocaleContent = {
     careerProfile: [
       "Ich bin ein proaktiver Senior Software Developer mit über 7 Jahren Erfahrung in der Entwicklung skalierbarer Webanwendungen, Frontend-Plattformen, wiederverwendbarer Komponentenbibliotheken und unternehmensweiter Designsysteme. Mein Schwerpunkt liegt auf wartbaren, barrierefreien und leistungsstarken Benutzeroberflächen mit React, Vue und TypeScript, ergänzt durch praktische Backend-Erfahrung mit Node.js, Express.js, PostgreSQL (Supabase), GraphQL und REST-APIs. KI-gestützte Entwicklung und Agentic AI sind fester Bestandteil meiner täglichen Arbeit.",
       "Ich arbeite am besten in kleinen, kollaborativen Teams und schätze offene, freundliche und direkte Kommunikation, um Missverständnisse zu vermeiden und alle aufeinander abzustimmen. Ich habe gelernt, wie wichtig Ehrlichkeit, Klarheit und eine serviceorientierte Haltung sind. Ich glaube daran, Ziele gemeinsam zu erreichen, Wissen zu teilen und Erfolge als Team zu feiern.",
-      "Ich kann Mehrwert in Rollen wie Senior Frontend Developer, Frontend Architect und Design System Engineer schaffen.",
+      "Ich kann Mehrwert in Rollen wie Senior Frontend Developer, Frontend Architect und Design System Engineer schaffen – und in Teams, die Agentic AI in ihre Entwicklungsarbeit integrieren.",
     ],
     achievements: [
       "Aufbau des Designsystems und einer Bibliothek mit über 40 Komponenten, die von 5 Produktteams bei FIEGE genutzt wird – einer europäischen Logistikgruppe mit über 22.000 Mitarbeitenden in 14 Ländern.",
