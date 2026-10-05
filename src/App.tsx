@@ -6,7 +6,6 @@ import { EducationLanguages } from "./components/EducationLanguages";
 import { Experience } from "./components/Experience";
 import { Hero } from "./components/Hero";
 import { HireMe } from "./components/HireMe";
-import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { SelectedWork } from "./components/SelectedWork";
 import { Skills } from "./components/Skills";
 
@@ -21,12 +20,6 @@ export default function App() {
         {ui.skipToContent}
       </a>
 
-      <div className="site-toolbar">
-        <div className="container site-toolbar__inner">
-          <LanguageSwitcher />
-        </div>
-      </div>
-
       <Hero identity={identity} contacts={contacts} />
 
       <main id="main-content">
@@ -38,6 +31,7 @@ export default function App() {
         <SelectedWork projects={profile.selectedWork} />
         <EducationLanguages
           education={profile.education}
+          certifications={profile.certifications}
           languages={profile.languages}
         />
         <Contact contacts={contacts} />

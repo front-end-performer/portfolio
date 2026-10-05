@@ -1,17 +1,53 @@
-:root {
-  --color-bg: #0b1220;
-  --color-bg-elevated: #111a2e;
-  --color-surface: #131d33;
-  --color-border: #233149;
-  --color-text: #eef2f9;
-  --color-text-muted: #aab6cc;
-  --color-text-subtle: #7f8da6;
-  --color-accent: #5ea9ff;
-  --color-accent-strong: #2b7fff;
-  --color-accent-contrast: #04122b;
-  --color-focus: #8fc2ff;
+/* Self-hosted variable fonts (no third-party requests). */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-stretch: 75% 100%;
+  font-style: normal;
+  font-display: swap;
+}
 
-  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /*
+   * Palette built on color psychology:
+   * blue  -> trust, competence (primary actions, links)
+   * teal  -> innovation, growth (AI / secondary accents)
+   * amber -> energy, achievement (used sparingly for highlights)
+   */
+  color-scheme: light;
+  --color-bg: #f6f8fc;
+  --color-bg-elevated: #eef3fb;
+  --color-surface: #ffffff;
+  --color-border: #e1e7f0;
+  --color-border-strong: #c9d3e3;
+  --color-text: #0f172a;
+  --color-text-muted: #475569;
+  --color-text-subtle: #64748b;
+  --color-accent: #2563eb;
+  --color-accent-strong: #1d4ed8;
+  --color-accent-soft: #e8f0fe;
+  --color-accent-contrast: #ffffff;
+  --color-secondary: #0f766e;
+  --color-secondary-soft: #e3f6f3;
+  --color-highlight: #f59e0b;
+  --color-focus: #2563eb;
+  --gradient-brand: linear-gradient(135deg, #2563eb 0%, #0d9488 100%);
+  --hero-glow-1: rgba(37, 99, 235, 0.14);
+  --hero-glow-2: rgba(13, 148, 136, 0.12);
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 10px 30px -12px rgba(15, 23, 42, 0.18);
+
+  --font-display: "Space Grotesk", "Roboto", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Roboto", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji";
   --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
@@ -30,9 +66,32 @@
   --radius-md: 10px;
   --radius-lg: 16px;
 
-  --container-width: 56rem;
-  --shadow-sm: 0 1px 2px rgba(2, 8, 20, 0.4);
-  --shadow-md: 0 8px 24px rgba(2, 8, 20, 0.35);
+  --container-width: 60rem;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #0b1120;
+  --color-bg-elevated: #111a2e;
+  --color-surface: #131d33;
+  --color-border: #22304a;
+  --color-border-strong: #33456a;
+  --color-text: #eef2f9;
+  --color-text-muted: #b4c0d4;
+  --color-text-subtle: #8494ad;
+  --color-accent: #60a5fa;
+  --color-accent-strong: #3b82f6;
+  --color-accent-soft: rgba(96, 165, 250, 0.12);
+  --color-accent-contrast: #04122b;
+  --color-secondary: #2dd4bf;
+  --color-secondary-soft: rgba(45, 212, 191, 0.12);
+  --color-highlight: #fbbf24;
+  --color-focus: #93c5fd;
+  --gradient-brand: linear-gradient(135deg, #60a5fa 0%, #2dd4bf 100%);
+  --hero-glow-1: rgba(96, 165, 250, 0.16);
+  --hero-glow-2: rgba(45, 212, 191, 0.1);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 10px 30px -12px rgba(0, 0, 0, 0.6);
 }
 
 *,
@@ -53,9 +112,19 @@ body {
   line-height: 1.6;
   color: var(--color-text);
   background-color: var(--color-bg);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
 }
 
 h1,
@@ -116,6 +185,10 @@ svg {
 .skip-link:focus {
   top: var(--space-4);
   text-decoration: none;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .visually-hidden {

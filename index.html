@@ -4,26 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="theme-color" content="#0b1220" />
+    <meta name="theme-color" content="#f6f8fc" />
+    <script>
+      (function () {
+        var theme = "light";
+        try {
+          theme = localStorage.getItem("theme") ||
+            (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        } catch (e) {}
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
 
-    <title>CV of Oleksii Sodolinskyi - Senior Frontend Software Developer</title>
+    <title>CV of Oleksii Sodolinskyi - Senior Software Developer | Frontend &amp; Agentic AI</title>
     <meta
       name="description"
-      content="Senior Frontend Software Developer with 7+ years building scalable web apps, design systems, and reusable component libraries. Expertise in React, Vue, TypeScript, accessibility, performance, and frontend architecture. Based in Düsseldorf, Germany."
+      content="Senior Software Developer with 7+ years building scalable web apps, design systems, and reusable component libraries. Expertise in React, Vue, TypeScript, Node.js, accessibility, and agentic AI. Based in Düsseldorf, Germany."
     />
     <meta
       name="keywords"
-      content="Senior Frontend Developer, TypeScript Developer, Vue Developer, React Developer, Design Systems, Frontend Architecture, Component Library, Storybook, Accessibility, Düsseldorf"
+      content="Senior Frontend Developer, TypeScript Developer, Vue Developer, React Developer, Design Systems, Frontend Architecture, Component Library, Storybook, Accessibility, Agentic AI, Düsseldorf"
     />
     <meta name="author" content="Oleksii Sodolinskyi" />
     <link rel="canonical" href="https://oleksii-sodolinskyi.vercel.app/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="Oleksii Sodolinskyi — Senior Frontend Software Developer" />
+    <meta property="og:title" content="Oleksii Sodolinskyi — Senior Software Developer | Frontend &amp; Agentic AI" />
     <meta
       property="og:description"
-      content="Senior Frontend Software Developer with 7+ years building scalable web apps, design systems, and reusable component libraries. React, Vue, TypeScript, accessibility, performance."
+      content="Senior Software Developer with 7+ years building scalable web apps, design systems, and reusable component libraries. React, Vue, TypeScript, accessibility, agentic AI."
     />
     <meta property="og:url" content="https://oleksii-sodolinskyi.vercel.app/" />
     <meta property="og:image" content="https://oleksii-sodolinskyi.vercel.app/og-image.svg" />
@@ -33,10 +43,10 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Oleksii Sodolinskyi — Senior Frontend Software Developer" />
+    <meta name="twitter:title" content="Oleksii Sodolinskyi — Senior Software Developer | Frontend &amp; Agentic AI" />
     <meta
       name="twitter:description"
-      content="Senior Frontend Software Developer with 7+ years building scalable web apps, design systems, React, Vue, and TypeScript."
+      content="Senior Software Developer with 7+ years building scalable web apps, design systems, React, Vue, TypeScript, and agentic AI."
     />
     <meta name="twitter:image" content="https://oleksii-sodolinskyi.vercel.app/og-image.svg" />
 
@@ -45,8 +55,8 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Oleksii Sodolinskyi",
-        "jobTitle": "Senior Frontend Software Developer",
-        "description": "Senior Frontend Software Developer with 7+ years of experience building scalable web applications, frontend platforms, reusable component libraries, and enterprise design systems.",
+        "jobTitle": "Senior Software Developer | Frontend & Agentic AI",
+        "description": "Senior Software Developer with 7+ years of experience building scalable web applications, frontend platforms, reusable component libraries, and enterprise design systems.",
         "email": "mailto:sodolinskyi@gmail.com",
         "url": "https://oleksii-sodolinskyi.vercel.app/",
         "address": {

@@ -1,14 +1,16 @@
-import type { Education, Language } from "../types";
+import type { Certification, Education, Language } from "../types";
 import { useTranslation } from "../i18n/LanguageProvider";
 import { Section } from "./Section";
 
 interface EducationLanguagesProps {
   education: Education[];
+  certifications: Certification[];
   languages: Language[];
 }
 
 export function EducationLanguages({
   education,
+  certifications,
   languages,
 }: EducationLanguagesProps) {
   const { ui } = useTranslation();
@@ -23,8 +25,32 @@ export function EducationLanguages({
               <li key={item.institution} className="education__item">
                 <p className="education__program">{item.program}</p>
                 <p className="education__institution">
-                  {item.institution}, {item.location}
+                  {item.institution}, {item.location} ·{" "}
+                  <span className="nowrap">{item.period}</span>
                 </p>
+              </li>
+            ))}
+          </ul>
+
+          <h3 className="subsection__title">{ui.certifications}</h3>
+          <ul className="education">
+            {certifications.map((item) => (
+              <li key={item.name} className="education__item">
+                <p className="education__program">{item.name}</p>
+                <p className="education__institution">
+                  {item.issuer} ·{" "}
+                  <span className="nowrap">{item.date}</span>
+                </p>
+                <p className="education__description">{item.description}</p>
+                <a
+                  className="card__link"
+                  href={item.link.href}
+                  aria-label={item.link.ariaLabel}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.link.display}
+                </a>
               </li>
             ))}
           </ul>
