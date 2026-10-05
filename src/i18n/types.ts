@@ -10,6 +10,7 @@ export interface UIStrings {
   contactLinks: string;
   experienceSuffix: string;
   languageSwitcher: string;
+  themeToggle: { light: string; dark: string };
   localeNames: Record<Locale, string>;
   sections: {
     hireMe: string;
@@ -28,6 +29,7 @@ export interface UIStrings {
     focusAreas: string;
   };
   education: string;
+  certifications: string;
   languages: string;
   contactIntro: string;
   techStack: string;

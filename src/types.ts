@@ -46,6 +46,15 @@ export interface Education {
   institution: string;
   location: string;
   program: string;
+  period: string;
+}
+
+export interface Certification {
+  name: string;
+  issuer: string;
+  date: string;
+  description: string;
+  link: ContactLink;
 }
 
 export interface Language {
@@ -74,6 +83,7 @@ export interface Profile {
   experience: ExperienceItem[];
   selectedWork: Project[];
   education: Education[];
+  certifications: Certification[];
   languages: Language[];
   references?: Reference[];
 }
